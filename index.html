@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Eli Pastrana</title>
+</head>
+<header>
+  <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="IMG/descargar.png" alt="Logo">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="navbarMenu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Inicio</a>
+        <a class="navbar-item" href="#">Mis Trabajos</a>
+        <a class="navbar-item" href="#">Contácteme</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach(function ($el) {
+          $el.addEventListener('click', function () {
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+    <div>
+      <article class="panel is-primary">
+        <p class="panel-heading">
+          Encuentra lo que buscas
+        </p>
+        <p class="panel-tabs">
+        <div class="panel-block">
+          <p class="control has-icons-left">
+            <input class="input is-primary" type="text" placeholder="Search">
+            <span class="icon is-left">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </span>
+          </p>
+        </div>
+      </article>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="container box p-5">
+    <h1 class="title has-text-centered ">Un poco de Historia</h1>
+    <p>Desde pequeño sabia lo que queria ser de grande, tal vez no en espefisico ser un programador de paginas web pero
+      si sabia que queria hacer realidad los sueños de las personas y hacer realidad sus ideas, desde el colegio estudie
+      un tecnico en mecanica industrial para poder hacer creaciones con herramientas y poder ver las ideas de los demas
+      siendo reale. Haci que en la univercidad me decidi por estudiar Ingenieria en Ciencias de la computacion para
+      poder crear con mis manos y poder ayudarle a las personas a realizar sus sueños y que los puedan ver
+      realidad.Ayudame a lograr realidad TUS SUEÑOS</p>
+  </div>
+  <div class="box">
+    <div class="container ">
+      <h2 class="title has-text-centered p-5">Areas en las que puedo ayudarte.</h2>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="IMG/vendedor.jpg" alt="Imagen 1">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="has-text-centered has-text-weight-bold">Ventas</p>
+              <p>Un buen sitio web logra hacer que tus cleintes vean mas de lo que ofreces y facilita las transacciones.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="IMG/chef.jpg" alt="Imagen 2">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="has-text-centered has-text-weight-bold">Restaurantes</p>
+              <p>Un salto al mundo, muestra a los cleintes lo que logras con tus manos, deja que el mundo disfrute de tu talento culinario.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="IMG/musico.jpeg" alt="Imagen 3">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="has-text-centered has-text-weight-bold">Artistas</p>
+              <p>Muestra tu talento, una pagina web podras lograr que tus fans sigan tus pasos mas de serca y los hacercaras mas a ti.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="IMG/gam.jpg" alt="Imagen 4">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="has-text-centered has-text-weight-bold">Gamers</p>
+              <p>Muestra tus habilidades con los mandos. Deja que tus seguidores vean mas de serca al GOAT.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+<footer class="footer has-background-primary">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <h2 class="title is-5">Información de contacto</h2>
+        <p>Nombre: Eli Moises Pastrana</p>
+        <p>Correo Electrónico: pastranae671@gmail.com</p>
+        <p>Teléfono: +504 89087694</p>
+      </div>
+      <div class="column">
+        <h2 class="title is-5">Redes Sociales</h2>
+        <p><a href="https://www.facebook.com/profile.php?id=61550737445101">Facebook</a></p>
+        <p><a href="https://api.whatsapp.com/qr/5YZ7A3LGL7LQG1?autoload=1&app_absent=0">whatsapp</a></p>
+        <p><a href="https://www.instagram.com/pastrana.eli/">Instagram</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>
